@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tts"
+            android:layout_marginTop="50dp"
+            android:text="Text to Speech"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            />
+        
+        <EditText
+            android:layout_below="@id/tts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tts_editText"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:hint="Enter your word"
+            />
+        
+        <Button
+            android:layout_below="@id/tts_editText"
+            android:elevation="5dp"
+            android:enabled="true"
+            android:shadowColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_tts"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/mybutton"
+            android:text="Speak"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="normal"
+            />
+
+        <Switch
+            android:layout_below="@id/btn_tts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_tts"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="55dp"
+            android:padding="20dp"
+            android:switchMinWidth="50dp"
+            android:switchPadding="4dp"
+            android:text="Switch to Speech to Text"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+        
+        
+    </RelativeLayout>
+    
+    
+    
+</ScrollView>
